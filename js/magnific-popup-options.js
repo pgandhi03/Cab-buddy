@@ -43,10 +43,6 @@ $(document).ready(function() {
         fixedContentPos: false
     });
 	};
-
-	
-
-
 	// Call the functions 
 	magnifPopup();
 	linkMagnifPopup();
