@@ -14,7 +14,7 @@ mail = Mail(app)
 
 
 def maill(recp_list,final_msg):
-	msg = Message('From easycabpooling', sender ='<your mail address>' , recipients = recp_list)
+	msg = Message('From <your name>', sender ='<your mail address>' , recipients = recp_list)
 	msg.body = final_msg
 	mail.send(msg)
 	return "Sent"
