@@ -16,13 +16,6 @@ app.config['MYSQL_DB']='data'
 
 mysql=MySQL(app)
 
-
-
-
-
-
-
-
 @app.route('/',methods=['GET','POST'])
 @app.route('/index')
 def index():
