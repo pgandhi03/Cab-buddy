@@ -49,8 +49,6 @@ def register():
 
 	return render_template('register.html')
 
-
-
 @app.route("/pickup",methods=['GET','POST'])
 def pickup():
 
@@ -64,11 +62,8 @@ def pickup():
 		cur=mysql.connection.cursor()
 		cur.execute("insert into pickup values(%s,%s,%s,%s);",(drop,date,time,mail))
 		mysql.connection.commit()
-		cur.close()		
-		
-         
+		cur.close()	
 	return render_template('pickup.html')     
-
 
 @app.route("/dropoff",methods=['GET','POST'])
 def dropoff():
@@ -89,8 +84,6 @@ def dropoff():
 
 @app.route("/start")
 def hello():
-
-	
 	prachi()
 	
 	# schedule.every().hour.do(prachi)
